@@ -22,6 +22,7 @@ Download at [CoolAPK | 酷安](https://www.coolapk.com/apk/tk.louisstudio.daily_
 ## Screenshots
 
 ![Welcome](img/img0.jpg)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Faeilot%2FDailyNotes.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Faeilot%2FDailyNotes?ref=badge_shield)
 
 ![Home](img/img3.jpg)
 
@@ -32,3 +33,6 @@ Download at [CoolAPK | 酷安](https://www.coolapk.com/apk/tk.louisstudio.daily_
 ![Bottom Sheet](img/img4.jpg)
 
 ![Settings](img/img5.jpg)
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Faeilot%2FDailyNotes.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Faeilot%2FDailyNotes?ref=badge_large)
