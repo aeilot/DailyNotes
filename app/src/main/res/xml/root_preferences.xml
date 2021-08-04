@@ -1,0 +1,89 @@
+<PreferenceScreen
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            app:title="@string/general">
+        <SwitchPreferenceCompat
+                app:key="pinEnable"
+                app:title="@string/app_locker"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            app:title="@string/account">
+        <Preference
+                app:key="logout"
+                app:title="@string/log_out"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+                app:key="sync"
+                app:title="@string/sync_title"/>
+        <EditTextPreference
+                app:title="@string/webdav_address"
+                app:key="webdav_address"
+                app:defaultValue="https://dav.jianguoyun.com/dav/"
+                app:useSimpleSummaryProvider="true"
+        />
+        <EditTextPreference
+                app:title="@string/webdav_account"
+                app:key="webdav_account"
+                app:useSimpleSummaryProvider="true"
+        />
+        <EditTextPreference
+                app:title="@string/webdav_password"
+                app:key="webdav_password"
+                app:useSimpleSummaryProvider="false"
+        />
+        <Preference
+                app:title="@string/restore"
+                app:key="restore"
+                app:summary="@string/restore_from_cloud"
+        />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            app:title="@string/customize_header">
+        <EditTextPreference
+                app:title="@string/saying"
+                app:key="saying"
+                app:useSimpleSummaryProvider="true"/>
+        <EditTextPreference
+                app:title="@string/template"
+                app:key="template"
+                app:useSimpleSummaryProvider="true"/>
+        <EditTextPreference
+                app:title="@string/title_template"
+                app:key="title_template"
+                app:useSimpleSummaryProvider="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            app:title="@string/editor">
+        <SwitchPreferenceCompat
+                app:key="always_on"
+                app:title="@string/always_on"/>
+        <SwitchPreferenceCompat
+                app:key="title_center"
+                app:title="@string/title_center"/>
+        <SeekBarPreference
+            app:title="@string/autosave"
+            app:defaultValue="10"
+            android:max="60"
+            app:showSeekBarValue="true"
+            app:min="-1"
+            app:key="autosave"
+            app:summary="@string/set_to_minus"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            app:title="@string/others">
+        <SwitchPreferenceCompat
+                app:key="exit"
+                app:title="@string/click_back_twice_to_quit"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

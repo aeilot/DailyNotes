@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="400dp"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            card_view:cardCornerRadius="8dp">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                    <TextView
+                            android:id="@+id/titleTT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="TITLE"
+                            android:textAllCaps="false"
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
+                    <TextView
+                            android:id="@+id/dateTT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:fontFamily="sans-serif"
+                            android:text="Date"
+                            android:textAllCaps="false"
+                            android:textSize="18sp"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/word_count"
+                            android:textAllCaps="false"
+                            android:textSize="18sp"/>
+                    <TextView
+                            android:id="@+id/word"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:fontFamily="sans-serif"
+                            android:text="Date"
+                            android:textAllCaps="false"
+                            android:textSize="18sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_marginTop="16dp"
+                          android:gravity="center"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="1"
+                          android:layout_height="wrap_content"
+                          android:textStyle="bold"
+                          android:textSize="18sp"
+                          android:text="Tags"/>
+                <ImageButton android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:id="@+id/edt_tags"
+                             android:background="#00000000"
+                             card_view:srcCompat="@drawable/ic_edit_gray_24dp"/>
+            </LinearLayout>
+            <TextView android:layout_width="match_parent"
+                      android:id="@+id/tags"
+                      android:layout_marginTop="2dp"
+                      android:layout_height="wrap_content"
+                      android:text="Tags"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center|bottom"
+                    android:layout_marginBottom="24dp"
+                    android:layout_height="match_parent">
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_weight="1"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:id="@+id/dele"
+                              android:orientation="vertical">
+                    <ImageButton android:layout_width="36dp"
+                                 android:layout_height="36dp"
+                                 card_view:srcCompat="@drawable/ic_delete_black_24dp"
+                                 android:background="#00000000"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_marginTop="-8dp"
+                              android:layout_height="wrap_content"
+                              android:text="@string/delete"/>
+                </LinearLayout>
+                <Space android:layout_width="20dp" android:layout_height="match_parent"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:id="@+id/restore"
+                android:gravity="center">
+                    <ImageButton android:layout_width="36dp"
+                                 android:layout_height="36dp"
+                                 card_view:srcCompat="@drawable/ic_restore_black_24dp"
+                                 android:background="#00000000"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_marginTop="-8dp"
+                              android:layout_height="wrap_content"
+                              android:text="@string/restore"/>
+                </LinearLayout>
+                <Space android:layout_width="20dp" android:layout_height="match_parent"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical" android:gravity="center"
+                              android:id="@+id/deleA"
+                              android:layout_weight="1">
+                    <ImageButton android:layout_width="36dp"
+                                 android:layout_height="36dp"
+                                 card_view:srcCompat="@drawable/ic_delete_forever_black_24dp"
+                                 android:background="#00000000"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="-8dp"
+                              android:text="@string/deleteALL"/>
+                </LinearLayout>
+                <Space android:layout_width="20dp" android:layout_height="match_parent"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical" android:gravity="center"
+                              android:id="@+id/restoreA"
+                              android:layout_weight="1">
+                    <ImageButton android:layout_width="36dp"
+                                 android:layout_height="36dp"
+                                 card_view:srcCompat="@drawable/ic_restore_page_black_24dp"
+                                 android:background="#00000000"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_marginTop="-8dp"
+                              android:layout_height="wrap_content"
+                              android:text="@string/restoreALL"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

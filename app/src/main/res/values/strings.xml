@@ -1,0 +1,202 @@
+<resources>
+    <string name="app_name">Daily Notes</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title">Daily Notes</string>
+    <string name="nav_header_subtitle">By Louis Studio</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+
+    <string name="menu_home">Diaries</string>
+    <string name="about">About</string>
+    <string name="search">Search</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="about_info">Copyright (R) 2019 Louis Studio. All Right Reserved. Developed by Louis Aeilot D. Icons by
+        SVXEDD. This project is free. THOSE WHO GET ITS CODE FOR FREE WILL BE PUNISHED!!!The open source projects that
+        are used by this project: zzhoujay/RichText(MIT), qinci/AndroidEdit(Apache2.0) Version: 1.0
+    </string>
+    <string name="cal" translatable="false">Calendar</string>
+    <string name="menu_me">Settings</string>
+    <string name="menu_web">Website</string>
+    <string name="title_activity_qi_dong" translatable="false">QiDongActivity</string>
+    <string name="title_activity_guide" translatable="false">GuideActivity</string>
+    <string name="add">Edit</string>
+    <string name="input_title">Input Here...</string>
+    <string name="app_intro" translatable="false">Intro</string>
+    <string name="done">Done</string>
+    <string name="skip">Skip</string>
+    <string name="welcome">Welcome!</string>
+    <string name="shortcuts_back_short_label">Add Notes</string>
+    <string name="settings_long_name">Add Notes</string>
+    <string name="empty">Please write your first diary!</string>
+    <string name="emptyview_viewgroup">It is empty here!</string>
+    <string name="view">View</string>
+    <string name="initNote">Today, I downloaded Daily Notes</string>
+    <string name="end">--It is the bottom.--</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+    <string name="delque" translatable="false">Do you really want to delete it? You cannot recover it!</string>
+    <string name="no">CANCEL</string>
+    <string name="yes">YES</string>
+    <string name="ok">OK</string>
+    <string name="wel">Daily Notes is a Markdown Diary Application. It is made by Louis Studio.Please login first!
+    </string>
+    <string name="title_activity_login">Log in</string>
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Invalid username</string>
+    <string name="invalid_password">Invalid password</string>
+    <string name="login_failed">Log In failed</string>
+    <string name="days_left">Days Left</string>
+    <string name="statistics">Statistics</string>
+    <string name="you_have">You have</string>
+    <string name="notes">Notes</string>
+    <string name="the_first_one_is_at">The first one is written on</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title" translatable="false">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync WebDAV</string>
+    <string name="attachment_title" translatable="false">Download incoming attachments</string>
+    <string name="attachment_summary_on" translatable="false">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off" translatable="false">Only download attachments when manually requested
+    </string>
+    <string name="other_ways_to_login">One Account, mutiple apps.</string>
+    <string name="logque">You Need To Pay</string>
+    <string name="not_login">0 Day Left</string>
+    <string name="file" translatable="false">Markdown File</string>
+    <string name="copytext">Copy the text</string>
+    <string name="longpic" translatable="false">Screenshot</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="pleaseinput">Please input password or username.</string>
+    <string name="inputun">Please input username</string>
+    <string name="inputpw">Please input password</string>
+    <string name="about_intro" translatable="false">It is an App developed by Louis Studio.</string>
+    <string name="more" translatable="false">More Features</string>
+    <string name="cheap">It is very cheap</string>
+    <string name="cheap_intro">It is only 0.69 $ per month</string>
+    <string name="more_intro" translatable="false">There is a lot more features to be explored.</string>
+    <string name="register">Resgister</string>
+    <string name="mail">E-mail</string>
+    <string name="prompt_password_again">Password Again</string>
+    <string name="different">The two passwords are different</string>
+    <string name="inputmail">Please input e-mail</string>
+    <string name="internet">Internet error</string>
+    <string name="coming_soon">Coming soon...</string>
+    <string name="usernameSame">Username existing</string>
+    <string name="successregis">Register Success!</string>
+    <string name="expire">Expire on</string>
+    <string name="emptycard" translatable="false">Hello World</string>
+    <string name="pay">Your account is expired!</string>
+    <string name="payque">Please pay for the next month!</string>
+    <string name="isLock">Your diaries are locked.Please input password!</string>
+    <string name="forget">I forget the password.</string>
+    <string name="nav_pay">Pay</string>
+    <string name="click_agian_quit_app">Click again to quit app.</string>
+    <string name="addn">Add a note</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="intro">Hello!</string>
+    <string name="introtext">Welcome to Daily Notes</string>
+    <string name="premission">Premissions</string>
+    <string name="premissiontext">We need these premissions.</string>
+    <string name="preferance">For more</string>
+    <string name="preferancetext">You can set up the cloud backup and APP locker in this app.</string>
+    <string name="app_locker">APP Locker</string>
+    <string name="onedrive_cloudsync">WebDAV CloudSync</string>
+    <string name="youdbetteron">You would better enable it!</string>
+    <string name="i_forget_the_pin">I Forget The Pin!</string>
+    <string name="pin">Your pin is</string>
+    <string name="setpin">Set your pin</string>
+    <string name="pinerror">The pin is wrong!</string>
+    <string name="template">Note Template</string>
+    <string name="we_are_protecting_your_privacy">We are protecting your privacy!</string>
+    <string name="webdav_account">WebDAV Account</string>
+    <string name="webdav_password">WebDAV Password</string>
+    <string name="webdav_address">WebDAV Address</string>
+    <string name="restore_from_cloud">Restore from cloud</string>
+    <string name="today_last_year">Today Last Year</string>
+    <string name="terms_of_use">Terms Of Use</string>
+    <string name="safety">Safety</string>
+    <string name="peronality">Peronality</string>
+    <string name="others">Others</string>
+    <string name="click_back_twice_to_quit">Click BACK twice to quit</string>
+    <string name="log_out">Log out</string>
+    <string name="show_markdown_preview_at_homescreen">Show MarkDown preview at homescreen</string>
+    <string name="syncFail">Sync Failed</string>
+    <string name="syncCompelete">Sync Compeleted</string>
+    <string name="editor">Editor</string>
+    <string name="show_keyboard_while_editing">Show keyboard while editing</string>
+    <string name="logoutque">Do you want to log out?</string>
+    <string name="logoutque2">Please think about ot again!</string>
+    <string name="enableitfirst">Please enable this feature first!</string>
+    <string name="right_edge_distance">Right edge distance</string>
+    <string name="left_edge_distance">Left edge distance</string>
+    <string name="paragraph_spacing">paragraph spacing</string>
+    <string name="viewer">Viewer</string>
+    <string name="row_spacing">Row spacing</string>
+    <string name="thetitleofit">The title of the website:</string>
+    <string name="itstitle">Result</string>
+    <string name="createdate">Create Date</string>
+    <string name="word">Word Count</string>
+    <string name="menu_today">Memories</string>
+    <string name="yesa">YES</string>
+    <string name="morning">Good morning!</string>
+    <string name="afternoon">Good afternoon!</string>
+    <string name="night">Nighty night!</string>
+    <string name="midnight">It\'s time to sleep!</string>
+    <string name="noon">It\'s time to have lunch!</string>
+    <string name="check_these_notes_below">Check these notes below!</string>
+    <string name="empty2">Nothing is found</string>
+    <string name="theme">Theme</string>
+    <string name="findNothing">Nothing is found</string>
+    <string name="collection">COLLECTION</string>
+    <string name="dark_mode">Theme</string>
+    <string name="dark">Dark</string>
+    <string name="light">Light</string>
+    <string name="auto">Automatic</string>
+    <string name="active">Active after reopen this app</string>
+    <string name="loginfirst">This feature needs you to log in!</string>
+    <string name="donate">Donate</string>
+    <string name="noads">There\'s no ads to see.</string>
+    <string name="thanks">Thank you!</string>
+    <string name="explore">Explore</string>
+    <string name="search_tags">Search Tags</string>
+    <string name="search_date">Search Date</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="empty3">Nothing\'s here</string>
+    <string name="option">What do you want to do?</string>
+    <string name="restore">Resotre</string>
+    <string name="transitions_name"/>
+    <string name="search_title">Search Title</string>
+    <string name="general">General</string>
+    <string name="account">Account</string>
+    <string name="meet_daily_notes_3">Meet Daily Notes 3</string>
+    <string name="enter">Enter</string>
+    <string name="redesigned_and_rebuilt_nbringing_wonderful_features">Redesigned and rebuilt\nBringing wonderful
+        features
+    </string>
+    <string name="customize_header">Customize</string>
+    <string name="saying">Greeting</string>
+    <string name="always_on">Always on</string>
+    <string name="word_count">Word Count</string>
+    <string name="change_tags">Edit tags</string>
+    <string name="deleteALL">Delete All</string>
+    <string name="restoreALL">Restore All</string>
+    <string name="deleteForever">Delete</string>
+    <string name="trash">Trash</string>
+    <string name="resque">Do you want to restore all?</string>
+    <string name="title_center">Title Center</string>
+    <string name="title_template">Title Template</string>
+    <string name="autosave">Auto Save (Second)</string>
+    <string name="set_to_minus">Set to -1 to disable</string>
+</resources>

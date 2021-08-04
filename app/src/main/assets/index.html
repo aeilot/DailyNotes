@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LS Live Preview | Based On Pen</title>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    @media all and (max-width:1024px) {
+
+      body,
+      pre a {
+        width: 60%;
+      }
+    }
+    img{ width:75%; height:75%;}
+
+    small {
+      color: #999;
+    }
+
+    pre {
+      white-space: pre-wrap;
+    }
+
+    /*
+  When the webpage is printed
+  this media query hides extra elements,
+  and makes the text content fit the page.
+  */
+    /* @media print {
+    #toolbar {
+        display: none;
+    } */
+    body {
+      width: 94%;
+      padding-top: 1em;
+      font-size: 16px;
+      overflow-x: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto
+Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+    }
+
+    html {
+      border-top: 0;
+    }
+
+    /* } */
+  </style>
+  <link rel="stylesheet" href="src/pen.css" />
+  <!--Customized-->
+</head>
+
+<body>
+
+  <!-- <div id="toolbar">
+  <span id="mode" class="icon-mode"></span>
+  <span id="hinted" class="icon-pre disabled" title="Toggle Markdown Hints"></span>
+  <span id="tomd" title="to markdown">MD</span>
+</div> -->
+
+  <div id="custom-toolbar">
+</div>
+  <script src="node_modules/marked/marked.min.js"></script>
+  <div data-toggle="pen" id="pen" contenteditable="true">
+  </div>
+  <script src="src/pen.js"></script>
+  <script src="src/markdown.js"></script>
+  <script type="text/javascript">
+    // config
+    var options = {
+      editor: document.querySelector('[data-toggle="pen"]'),
+      textarea: '<textarea name="content"></textarea>', // fallback for old browsers
+      debug: false,
+      stay: true,
+      list: ['blockquote', 'h2', 'h3', 'p', 'insertorderedlist', 'insertunorderedlist',
+      'indent', 'outdent', 'bold', 'italic', 'underline', 'createlink'],
+      linksInNewWindow: true
+    };
+
+    // create editor
+    var pen = window.pen = new Pen(options);
+    pen.focus();
+    var isDestory = false;
+    function preview(){
+      if(isDestory) {
+        isDestory = false;
+        pen.rebuild();
+      } else {
+        isDestory = true;
+        pen.destroy();
+        var objs = document.getElementsByTagName("img");
+       var imgs = [];
+      for (var i = 0; i < objs.length; i++) {
+        imgs[i] = objs[i].src;
+        objs[i].onclick = function () {
+          javascript:androidJS.setValue(imgs, i);
+        }
+        objs[i].style.cursor = "pointer";
+      }
+      }
+    }
+    // export content as markdown
+    // document.querySelector('#tomd').addEventListener('click', function() {
+    //   var text = pen.toMd();
+    //   // Export
+    // });
+    function getArticle(src) {
+      var text = pen.toMd();
+      return text;
+    }
+
+    function syntax() {
+      if (pen.classList.contains('hinted')) {
+        pen.classList.remove('hinted');
+      } else {
+        pen.classList.add('hinted');
+      }
+      pen.rebuild();
+    }
+
+    function insert(msg) {
+      var range = window.getSelection().getRangeAt(0);
+      var endDom = range.endContainer;
+      var offset = range.endOffset;
+      var node = document.createElement("span");
+      node.innerHTML = marked(msg);
+      range.insertNode(node);
+  
+      // document.querySelector('[data-toggle="pen"]').innerHTML +=
+      //   marked(msg);
+    }
+
+    function setMargin(l,r){
+      document.body.style.marginLeft = l.toString()+"px";
+      document.body.style.marginRight = r.toString()+"px";
+    }
+    function msetup(msg) {
+      document.querySelector('[data-toggle="pen"]').innerHTML =
+        marked(msg);
+
+    }
+    // toggle editor mode
+    // document.querySelector('#hinted').addEventListener('click', function() {
+    //   var pen = document.querySelector('.pen')
+    //   if(pen.classList.contains('hinted')) {
+    //     pen.classList.remove('hinted');
+    //     this.classList.add('disabled');
+    //   } else {
+    //     pen.classList.add('hinted');
+    //     this.classList.remove('disabled');
+    //   }
+    //
+    // });
+  </script>
+</body>
+
+</html>

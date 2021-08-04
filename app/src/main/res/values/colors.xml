@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fafafa</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="text">#000000</color>
+    <color name="barColor">#ffffff</color>
+    <color name="colorPrimaryLight">#768fff</color>
+    <color name="intro1">#e53935</color>
+    <color name="intro2">#fbc02d</color>
+    <color name="dark">#000000</color>
+    <color name="light">#ffffff</color>
+    <color name="intro3">#03a9f4</color>
+    <color name="intro4">#66bb6a</color>
+    <color name="transparent">#50000000</color>
+</resources>

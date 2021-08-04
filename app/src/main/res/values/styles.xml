@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:forceDarkAllowed">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">#FFFFFF</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:smoothScrollbar">true</item>
+        <item name="android:navigationBarColor">#FFFFFF</item>
+    </style>
+    <style name="AppTheme.Settings" parent="AppTheme">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#FFFFFF</item>
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="transparentBgDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

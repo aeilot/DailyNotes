@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="tk.louisstudio.daily_notes">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature
+            android:name="android.hardware.camera"
+            android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <application
+            android:allowBackup="false"
+            android:icon="@mipmap/ic_launcher_round"
+            android:label="@string/app_name"
+            android:networkSecurityConfig="@xml/network_secureity_config"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:replace="android:allowBackup">
+        <activity
+                android:name=".IntroActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name="tk.louisstudio.daily_notes.SettingsActivity"
+                android:label="@string/title_activity_settings"
+                android:parentActivityName="tk.louisstudio.daily_notes.MainActivity"
+                android:theme="@style/AppTheme.Settings">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="tk.louisstudio.daily_notes.MainActivity"/>
+        </activity>
+        <activity
+                android:name="tk.louisstudio.daily_notes.AddActivity"
+                android:label="@string/add"
+                android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+                android:name="tk.louisstudio.daily_notes.LoginActivity"
+                android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+                android:name="tk.louisstudio.daily_notes.RegeisterActivity"
+                android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+                android:name="tk.louisstudio.daily_notes.SetPinActivity"
+                android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+                android:name="tk.louisstudio.daily_notes.PinLockActivity"
+                android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+                android:name="tk.louisstudio.daily_notes.MainActivity"
+                android:configChanges="uiMode"
+                android:launchMode="singleTask"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data
+                    android:name="android.app.shortcuts"
+                    android:resource="@xml/shortcuts"/>
+        </activity>
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:authorities="tk.louisstudio.daily_notes.FileProvider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>
