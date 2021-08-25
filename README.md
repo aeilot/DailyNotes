@@ -5,7 +5,7 @@
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Faeilot%2FDailyNotes.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Faeilot%2FDailyNotes?ref=badge_shield)
 
 
-> **The project is now NOT ACTIVELY maintaine for I am no longer an Android Developer (Maybe gonna make the iOS edition). PRs and Issues are still welcome!**
+> **The project is now NOT ACTIVELY maintained. PRs and Issues are still welcome!**
 
 > The 3.0 Version of the repo is open source whereas the older versions are not. You can still download the APKs from CoolAPK.
 
